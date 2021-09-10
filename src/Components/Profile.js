@@ -39,7 +39,7 @@ import Button from '@material-ui/core/Button';
 
 
 import ProfileBottom from './ProfileBottom'
-
+import EditProfile from './EditProfile';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -152,6 +152,7 @@ function Profile({ postData }) {
                     <br></br>
                     <h6 className="sub-head-email"><span style={{ fontWeight: 500 }}>Email:- </span>{userData.email}</h6>
                     {/* <Button variant="outlined" color="secondary" size='medium' style={{marginLeft:" 42rem"}}>Edit</Button> */}
+                    <EditProfile userData={userData}></EditProfile>
 
                   </div>
                 </div>
